@@ -1,6 +1,10 @@
 name: get-version node
 description: An action that fetches the version from package json and makes it available in the output version
-inputs: {}
+inputs:
+  location:
+    description: Where to find the package.json file
+    required: true
+    default: ./package.json
 outputs:
   version:
     description: version from package.json file
