@@ -1,0 +1,11 @@
+name: get-version node
+description: An action that fetches the version from package json and makes it available in the output version
+inputs: {}
+outputs:
+  version:
+    description: version from package.json file
+runs:
+  using: docker
+  image: Dockerfile
+  args: []
+
